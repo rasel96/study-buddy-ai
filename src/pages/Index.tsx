@@ -46,7 +46,7 @@ const Index = () => {
           parsed_text: data.parsed_text,
           summary: data.summary,
           notes: data.notes as string[] | null,
-          questions: data.questions as PDFDocument["questions"],
+          questions: data.questions as unknown as PDFDocument["questions"],
           status: "completed",
         });
         setAppState("result");
