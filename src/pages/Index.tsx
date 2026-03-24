@@ -45,7 +45,7 @@ const Index = () => {
           upload_date: data.upload_date,
           parsed_text: data.parsed_text,
           summary: data.summary,
-          notes: data.notes as string[] | null,
+          notes: data.notes as unknown as string[] | null,
           questions: data.questions as unknown as PDFDocument["questions"],
           status: "completed",
         });
